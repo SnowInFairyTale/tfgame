@@ -162,12 +162,12 @@ public class WaveManager extends DrawableGameComponent implements
             case Medium:
                 baseXueLang1 = 7;
                 bassNum1 = 2;
-                jiXueLang1 = 5;
+                jiXueLang1 = 4;
                 break;
             case Hard:
                 baseXueLang1 = 10;
                 bassNum1 = 4;
-                jiXueLang1 = 7;
+                jiXueLang1 = 5;
                 break;
         }
 
@@ -198,22 +198,22 @@ public class WaveManager extends DrawableGameComponent implements
 
         int baseXueLang2 = 6;
         int bassNum2 = 1;
-        int jiXueLang2 = 5;
+        int jiXueLang2 = 4;
         switch (difficulty) {
             case Easy:
                 baseXueLang2 = 6;
                 bassNum2 = 1;
-                jiXueLang2 = 5;
+                jiXueLang2 = 4;
                 break;
             case Medium:
                 baseXueLang2 = 8;
                 bassNum2 = 2;
-                jiXueLang2 = 7;
+                jiXueLang2 = 5;
                 break;
             case Hard:
                 baseXueLang2 = 11;
                 bassNum2 = 4;
-                jiXueLang2 = 10;
+                jiXueLang2 = 6;
                 break;
         }
 
@@ -244,22 +244,22 @@ public class WaveManager extends DrawableGameComponent implements
 
         int baseXueLang3 = 7;
         int bassNum3 = 1;
-        int jiXueLang3 = 7;
+        int jiXueLang3 = 5;
         switch (difficulty) {
             case Easy:
                 baseXueLang3 = 7;
                 bassNum3 = 1;
-                jiXueLang3 = 7;
+                jiXueLang3 = 5;
                 break;
             case Medium:
                 baseXueLang3 = 9;
                 bassNum3 = 2;
-                jiXueLang3 = 10;
+                jiXueLang3 = 6;
                 break;
             case Hard:
                 baseXueLang3 = 12;
                 bassNum3 = 4;
-                jiXueLang3 = 12;
+                jiXueLang3 = 7;
                 break;
         }
         for (int i = 0; i < 5; i++) {
