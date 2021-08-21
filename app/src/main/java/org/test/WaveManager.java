@@ -152,18 +152,22 @@ public class WaveManager extends DrawableGameComponent implements
         }
         int baseXueLang1 = 5;
         int bassNum1 = 1;
+        int jiXueLang1 = 3;
         switch (difficulty) {
             case Easy:
                 baseXueLang1 = 5;
                 bassNum1 = 1;
+                jiXueLang1 = 3;
                 break;
             case Medium:
                 baseXueLang1 = 7;
                 bassNum1 = 2;
+                jiXueLang1 = 5;
                 break;
             case Hard:
                 baseXueLang1 = 10;
                 bassNum1 = 4;
+                jiXueLang1 = 7;
                 break;
         }
 
@@ -171,19 +175,19 @@ public class WaveManager extends DrawableGameComponent implements
             this.waves.add(new Wave(game, 0x12, 200 + baseXueLang1 * waves.size(), 1f, 1000.0, 2, 5 + (level - 1) * 3, 5 + (level - 1) * 3, MonsterType.Peasant));
             this.waves.add(new Wave(game, 12, 260 + baseXueLang1 * waves.size(), 1.8f, 600.0, 2, 5 + (level - 1) * 3, 5 + (level - 1) * 3, MonsterType.Peasant));
             this.waves.add(new Wave(game, 3, 500 + baseXueLang1 * waves.size(), 1f, 2000.0, 4, 5 + (level - 1) * 3, 5 + (level - 1) * 3, MonsterType.Doctor));
-            this.waves.add(new Wave(game, 8, 0x9b + baseXueLang1 * waves.size(), 1f, 1000.0, 3, 5 + (level - 1) * 3, 5 + (level - 1) * 3, MonsterType.Chicken));
+            this.waves.add(new Wave(game, 8, 0x9b + jiXueLang1 * waves.size(), 1f, 1000.0, 3, 5 + (level - 1) * 3, (level - 1) * 3, MonsterType.Chicken));
             this.waves.add(new Wave(game, 12, 220 + baseXueLang1 * waves.size(), 1f, 300.0, 2, 5 + (level - 1) * 3, 5 + (level - 1) * 3, MonsterType.Peasant));
             this.waves.add(new Wave(game, 12, 260 + baseXueLang1 * waves.size(), 1f, 1000.0, 3, 5 + (level - 1) * 3, 5 + (level - 1) * 3, MonsterType.Berserker));
             this.waves.add(new Wave(game, 10, 280 + baseXueLang1 * waves.size(), 2f, 1000.0, 3, 5 + (level - 1) * 3, 5 + (level - 1) * 3, MonsterType.Peon));
-            this.waves.add(new Wave(game, 10, 170 + baseXueLang1 * waves.size(), 1f, 600.0, 3, 5 + (level - 1) * 3, 5 + (level - 1) * 3, MonsterType.Chicken));
+            this.waves.add(new Wave(game, 10, 170 + jiXueLang1 * waves.size(), 1f, 600.0, 3, 5 + (level - 1) * 3, (level - 1) * 3, MonsterType.Chicken));
             this.waves.add(new Wave(game, 10, 360 + baseXueLang1 * waves.size(), 1.8f, 200.0, 3, 5 + (level - 1) * 3, 5 + (level - 1) * 3, MonsterType.Peon));
             this.waves.add(new Wave(game, 10, 500 + baseXueLang1 * waves.size(), 1f, 1000.0, 3, 5 + (level - 1) * 3, 5 + (level - 1) * 3, MonsterType.Berserker));
             this.waves.add(new Wave(game, 1, 0xdac + baseXueLang1 * waves.size(), 1f, 1000.0, 30, 5 + (level - 1) * 3, 5 + (level - 1) * 3, MonsterType.Chieftain));
-            this.waves.add(new Wave(game, 10, 310 + baseXueLang1 * waves.size(), 1f, 1000.0, 3, 5 + (level - 1) * 3, 5 + (level - 1) * 3, MonsterType.Chicken));
+            this.waves.add(new Wave(game, 10, 310 + jiXueLang1 * waves.size(), 1f, 1000.0, 3, 5 + (level - 1) * 3, (level - 1) * 3, MonsterType.Chicken));
             this.waves.add(new Wave(game, 10, 500 + baseXueLang1 * waves.size(), 1f, 1000.0, 3, 5 + (level - 1) * 3, 5 + (level - 1) * 3, MonsterType.Peasant));
             this.waves.add(new Wave(game, 5, 900 + baseXueLang1 * waves.size(), 1f, 2000.0, 6, 5 + (level - 1) * 3, 5 + (level - 1) * 3, MonsterType.Doctor));
             this.waves.add(new Wave(game, 20, 550 + baseXueLang1 * waves.size(), 1f, 1000.0, 2, 5 + (level - 1) * 3, 5 + (level - 1) * 3, MonsterType.Berserker));
-            this.waves.add(new Wave(game, 10, 500 + baseXueLang1 * waves.size(), 1f, 1000.0, 3, 5 + (level - 1) * 3, 5 + (level - 1) * 3, MonsterType.Chicken));
+            this.waves.add(new Wave(game, 10, 500 + jiXueLang1 * waves.size(), 1f, 1000.0, 3, 5 + (level - 1) * 3, (level - 1) * 3, MonsterType.Chicken));
             this.waves.add(new Wave(game, 10, 700 + baseXueLang1 * waves.size(), 1.8f, 400.0, 3, 5 + (level - 1) * 3, 5 + (level - 1) * 3, MonsterType.Peon));
             this.waves.add(new Wave(game, 12, 800 + baseXueLang1 * waves.size(), 1f, 5000.0, 3, 5 + (level - 1) * 3, 5 + (level - 1) * 3, MonsterType.Peasant));
             this.waves.add(new Wave(game, 10, 700 + baseXueLang1 * waves.size(), 1.8f, 400.0, 3, 5 + (level - 1) * 3, 5 + (level - 1) * 3, MonsterType.Peon));
@@ -194,18 +198,22 @@ public class WaveManager extends DrawableGameComponent implements
 
         int baseXueLang2 = 7;
         int bassNum2 = 1;
+        int jiXueLang2 = 5;
         switch (difficulty) {
             case Easy:
                 baseXueLang2 = 7;
                 bassNum2 = 1;
+                jiXueLang2 = 5;
                 break;
             case Medium:
                 baseXueLang2 = 10;
                 bassNum2 = 2;
+                jiXueLang2 = 7;
                 break;
             case Hard:
                 baseXueLang2 = 13;
                 bassNum2 = 4;
+                jiXueLang2 = 10;
                 break;
         }
 
@@ -213,19 +221,19 @@ public class WaveManager extends DrawableGameComponent implements
             this.waves.add(new Wave(game, 0x12, 200 + baseXueLang2 * waves.size(), 1f, 1000.0, 2, 10 + (level - 1) * 3, 10 + (level - 1) * 3, MonsterType.Peasant));
             this.waves.add(new Wave(game, 12, 260 + baseXueLang2 * waves.size(), 1.8f, 600.0, 2, 10 + (level - 1) * 3, 10 + (level - 1) * 3, MonsterType.Peasant));
             this.waves.add(new Wave(game, 3, 500 + baseXueLang2 * waves.size(), 1f, 2000.0, 4, 10 + (level - 1) * 3, 10 + (level - 1) * 3, MonsterType.Doctor));
-            this.waves.add(new Wave(game, 8, 0x9b + baseXueLang2 * waves.size(), 1f, 1000.0, 3, 10 + (level - 1) * 3, 10 + (level - 1) * 3, MonsterType.Chicken));
+            this.waves.add(new Wave(game, 8, 0x9b + jiXueLang2 * waves.size(), 1f, 1000.0, 3, 10 + (level - 1) * 3, (level - 1) * 3, MonsterType.Chicken));
             this.waves.add(new Wave(game, 12, 220 + baseXueLang2 * waves.size(), 1f, 300.0, 2, 10 + (level - 1) * 3, 10 + (level - 1) * 3, MonsterType.Peasant));
             this.waves.add(new Wave(game, 12, 260 + baseXueLang2 * waves.size(), 1f, 1000.0, 3, 10 + (level - 1) * 3, 10 + (level - 1) * 3, MonsterType.Berserker));
             this.waves.add(new Wave(game, 10, 280 + baseXueLang2 * waves.size(), 2f, 1000.0, 3, 10 + (level - 1) * 3, 10 + (level - 1) * 3, MonsterType.Peon));
-            this.waves.add(new Wave(game, 10, 170 + baseXueLang2 * waves.size(), 1f, 600.0, 3, 10 + (level - 1) * 3, 10 + (level - 1) * 3, MonsterType.Chicken));
+            this.waves.add(new Wave(game, 10, 170 + jiXueLang2 * waves.size(), 1f, 600.0, 3, 10 + (level - 1) * 3, (level - 1) * 3, MonsterType.Chicken));
             this.waves.add(new Wave(game, 10, 360 + baseXueLang2 * waves.size(), 1.8f, 200.0, 3, 10 + (level - 1) * 3, 10 + (level - 1) * 3, MonsterType.Peon));
             this.waves.add(new Wave(game, 10, 500 + baseXueLang2 * waves.size(), 1f, 1000.0, 3, 10 + (level - 1) * 3, 10 + (level - 1) * 3, MonsterType.Berserker));
             this.waves.add(new Wave(game, 1, 0xdac + baseXueLang2 * waves.size(), 1f, 1000.0, 30, 10 + (level - 1) * 3, 10 + (level - 1) * 3, MonsterType.Chieftain));
-            this.waves.add(new Wave(game, 10, 310 + baseXueLang2 * waves.size(), 1f, 1000.0, 3, 10 + (level - 1) * 3, 10 + (level - 1) * 3, MonsterType.Chicken));
+            this.waves.add(new Wave(game, 10, 310 + jiXueLang2 * waves.size(), 1f, 1000.0, 3, 10 + (level - 1) * 3, (level - 1) * 3, MonsterType.Chicken));
             this.waves.add(new Wave(game, 10, 500 + baseXueLang2 * waves.size(), 1f, 1000.0, 3, 10 + (level - 1) * 3, 10 + (level - 1) * 3, MonsterType.Peasant));
             this.waves.add(new Wave(game, 5, 900 + baseXueLang2 * waves.size(), 1f, 2000.0, 6, 10 + (level - 1) * 3, 10 + (level - 1) * 3, MonsterType.Doctor));
             this.waves.add(new Wave(game, 20, 550 + baseXueLang2 * waves.size(), 1f, 1000.0, 2, 10 + (level - 1) * 3, 10 + (level - 1) * 3, MonsterType.Berserker));
-            this.waves.add(new Wave(game, 10, 500 + baseXueLang2 * waves.size(), 1f, 1000.0, 3, 10 + (level - 1) * 3, 10 + (level - 1) * 3, MonsterType.Chicken));
+            this.waves.add(new Wave(game, 10, 500 + jiXueLang2 * waves.size(), 1f, 1000.0, 3, 10 + (level - 1) * 3, (level - 1) * 3, MonsterType.Chicken));
             this.waves.add(new Wave(game, 10, 700 + baseXueLang2 * waves.size(), 1.8f, 400.0, 3, 10 + (level - 1) * 3, 10 + (level - 1) * 3, MonsterType.Peon));
             this.waves.add(new Wave(game, 12, 800 + baseXueLang2 * waves.size(), 1f, 5000.0, 3, 10 + (level - 1) * 3, 10 + (level - 1) * 3, MonsterType.Peasant));
             this.waves.add(new Wave(game, 10, 700 + baseXueLang2 * waves.size(), 1.8f, 400.0, 3, 10 + (level - 1) * 3, 10 + (level - 1) * 3, MonsterType.Peon));
@@ -236,37 +244,41 @@ public class WaveManager extends DrawableGameComponent implements
 
         int baseXueLang3 = 10;
         int bassNum3 = 1;
+        int jiXueLang3 = 7;
         switch (difficulty) {
             case Easy:
                 baseXueLang3 = 10;
                 bassNum3 = 1;
+                jiXueLang3 = 7;
                 break;
             case Medium:
                 baseXueLang3 = 13;
                 bassNum3 = 2;
+                jiXueLang3 = 10;
                 break;
             case Hard:
                 baseXueLang3 = 15;
                 bassNum3 = 4;
+                jiXueLang3 = 12;
                 break;
         }
         for (int i = 0; i < 5; i++) {
             this.waves.add(new Wave(game, 0x12, 200 + baseXueLang3 * waves.size(), 1f, 1000.0, 2, 15 + (level - 1) * 3, 15 + (level - 1) * 3, MonsterType.Peasant));
             this.waves.add(new Wave(game, 12, 260 + baseXueLang3 * waves.size(), 1.8f, 600.0, 2, 15 + (level - 1) * 3, 15 + (level - 1) * 3, MonsterType.Peasant));
             this.waves.add(new Wave(game, 3, 500 + baseXueLang3 * waves.size(), 1f, 2000.0, 4, 15 + (level - 1) * 3, 15 + (level - 1) * 3, MonsterType.Doctor));
-            this.waves.add(new Wave(game, 8, 0x9b + baseXueLang3 * waves.size(), 1f, 1000.0, 3, 15 + (level - 1) * 3, 15 + (level - 1) * 3, MonsterType.Chicken));
+            this.waves.add(new Wave(game, 8, 0x9b + jiXueLang3 * waves.size(), 1f, 1000.0, 3, 15 + (level - 1) * 3, (level - 1) * 3, MonsterType.Chicken));
             this.waves.add(new Wave(game, 12, 220 + baseXueLang3 * waves.size(), 1f, 300.0, 2, 15 + (level - 1) * 3, 15 + (level - 1) * 3, MonsterType.Peasant));
             this.waves.add(new Wave(game, 12, 260 + baseXueLang3 * waves.size(), 1f, 1000.0, 3, 15 + (level - 1) * 3, 15 + (level - 1) * 3, MonsterType.Berserker));
             this.waves.add(new Wave(game, 10, 280 + baseXueLang3 * waves.size(), 2f, 1000.0, 3, 15 + (level - 1) * 3, 15 + (level - 1) * 3, MonsterType.Peon));
-            this.waves.add(new Wave(game, 10, 170 + baseXueLang3 * waves.size(), 1f, 600.0, 3, 15 + (level - 1) * 3, 15 + (level - 1) * 3, MonsterType.Chicken));
+            this.waves.add(new Wave(game, 10, 170 + jiXueLang3 * waves.size(), 1f, 600.0, 3, 15 + (level - 1) * 3, (level - 1) * 3, MonsterType.Chicken));
             this.waves.add(new Wave(game, 10, 360 + baseXueLang3 * waves.size(), 1.8f, 200.0, 3, 15 + (level - 1) * 3, 15 + (level - 1) * 3, MonsterType.Peon));
             this.waves.add(new Wave(game, 10, 500 + baseXueLang3 * waves.size(), 1f, 1000.0, 3, 15 + (level - 1) * 3, 15 + (level - 1) * 3, MonsterType.Berserker));
             this.waves.add(new Wave(game, 1, 0xdac + baseXueLang3 * waves.size(), 1f, 1000.0, 30, 15 + (level - 1) * 3, 15 + (level - 1) * 3, MonsterType.Chieftain));
-            this.waves.add(new Wave(game, 10, 310 + baseXueLang3 * waves.size(), 1f, 1000.0, 3, 15 + (level - 1) * 3, 15 + (level - 1) * 3, MonsterType.Chicken));
+            this.waves.add(new Wave(game, 10, 310 + jiXueLang3 * waves.size(), 1f, 1000.0, 3, 15 + (level - 1) * 3, (level - 1) * 3, MonsterType.Chicken));
             this.waves.add(new Wave(game, 10, 500 + baseXueLang3 * waves.size(), 1f, 1000.0, 3, 15 + (level - 1) * 3, 15 + (level - 1) * 3, MonsterType.Peasant));
             this.waves.add(new Wave(game, 5, 900 + baseXueLang3 * waves.size(), 1f, 2000.0, 6, 15 + (level - 1) * 3, 15 + (level - 1) * 3, MonsterType.Doctor));
             this.waves.add(new Wave(game, 20, 550 + baseXueLang3 * waves.size(), 1f, 1000.0, 2, 15 + (level - 1) * 3, 15 + (level - 1) * 3, MonsterType.Berserker));
-            this.waves.add(new Wave(game, 10, 500 + baseXueLang3 * waves.size(), 1f, 1000.0, 3, 15 + (level - 1) * 3, 15 + (level - 1) * 3, MonsterType.Chicken));
+            this.waves.add(new Wave(game, 10, 500 + jiXueLang3 * waves.size(), 1f, 1000.0, 3, 15 + (level - 1) * 3, (level - 1) * 3, MonsterType.Chicken));
             this.waves.add(new Wave(game, 10, 700 + baseXueLang3 * waves.size(), 1.8f, 400.0, 3, 15 + (level - 1) * 3, 15 + (level - 1) * 3, MonsterType.Peon));
             this.waves.add(new Wave(game, 12, 800 + baseXueLang3 * waves.size(), 1f, 5000.0, 3, 15 + (level - 1) * 3, 15 + (level - 1) * 3, MonsterType.Peasant));
             this.waves.add(new Wave(game, 10, 700 + baseXueLang3 * waves.size(), 1.8f, 400.0, 3, 15 + (level - 1) * 3, 15 + (level - 1) * 3, MonsterType.Peon));
