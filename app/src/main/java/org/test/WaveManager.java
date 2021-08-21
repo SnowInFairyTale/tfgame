@@ -196,22 +196,22 @@ public class WaveManager extends DrawableGameComponent implements
             this.waves.add(new Wave(game, bassNum1, 0xdac + baseXueLang1 * waves.size(), 1f, 1000.0, 3, 50, 50, MonsterType.Chieftain));
         }
 
-        int baseXueLang2 = 7;
+        int baseXueLang2 = 6;
         int bassNum2 = 1;
         int jiXueLang2 = 5;
         switch (difficulty) {
             case Easy:
-                baseXueLang2 = 7;
+                baseXueLang2 = 6;
                 bassNum2 = 1;
                 jiXueLang2 = 5;
                 break;
             case Medium:
-                baseXueLang2 = 10;
+                baseXueLang2 = 8;
                 bassNum2 = 2;
                 jiXueLang2 = 7;
                 break;
             case Hard:
-                baseXueLang2 = 13;
+                baseXueLang2 = 11;
                 bassNum2 = 4;
                 jiXueLang2 = 10;
                 break;
@@ -242,22 +242,22 @@ public class WaveManager extends DrawableGameComponent implements
             this.waves.add(new Wave(game, bassNum2, 0xdac + baseXueLang2 * waves.size(), 1f, 1000.0, 3, 50, 50, MonsterType.Chieftain));
         }
 
-        int baseXueLang3 = 10;
+        int baseXueLang3 = 7;
         int bassNum3 = 1;
         int jiXueLang3 = 7;
         switch (difficulty) {
             case Easy:
-                baseXueLang3 = 10;
+                baseXueLang3 = 7;
                 bassNum3 = 1;
                 jiXueLang3 = 7;
                 break;
             case Medium:
-                baseXueLang3 = 13;
+                baseXueLang3 = 9;
                 bassNum3 = 2;
                 jiXueLang3 = 10;
                 break;
             case Hard:
-                baseXueLang3 = 15;
+                baseXueLang3 = 12;
                 bassNum3 = 4;
                 jiXueLang3 = 12;
                 break;
@@ -287,6 +287,17 @@ public class WaveManager extends DrawableGameComponent implements
             this.waves.add(new Wave(game, bassNum3, 0xdac + baseXueLang3 * waves.size(), 1f, 1000.0, 3, 50, 50, MonsterType.Chieftain));
         }
 
+        for (int i = 0; i < 4; i++) {
+            this.waves.add(new Wave(game, 8, 0xfff + baseXueLang3 * waves.size(), 1f, 1000.0, 3, 50, 50, MonsterType.Chieftain));
+        }
+
+        for (int i = 0; i < 5; i++) {
+
+        }
+
+        for (int i = 0; i < 5; i++) {
+
+        }
 
     }
 
