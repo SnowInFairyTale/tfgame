@@ -26,8 +26,8 @@ public class SelectLevelScreen extends MenuScreen {
 	public SelectLevelScreen(MainGame game, ScreenType prevScreen,
 			Difficulty difficulty) {
 		super("", game, prevScreen);
-		this.level2Locked = true;
-		this.level3Locked = true;
+		this.level2Locked = false;
+		this.level3Locked = false;
 		this.remainingLivesRecordLevel1 = -1;
 		this.remainingLivesRecordLevel2 = -1;
 		this.remainingLivesRecordLevel3 = -1;
