@@ -154,15 +154,9 @@ public class MainMenuScreen extends MenuScreen {
 
 	private void SelectLevel(Difficulty difficulty) {
 		super.getScreenManager().ExitAllScreens();
-		if (((difficulty == Difficulty.Medium) || (difficulty == Difficulty.Hard))) {
-			super.getScreenManager().AddScreen(
-					new BuyToGetFeaturesScreen(this.game,
-							ScreenType.MainMenuScreen, null));
-		} else {
-			super.getScreenManager().AddScreen(
-					new SelectLevelScreen(this.game, ScreenType.MainMenuScreen,
-							difficulty));
-		}
+		super.getScreenManager().AddScreen(
+				new SelectLevelScreen(this.game, ScreenType.MainMenuScreen,
+						difficulty));
 	}
 
 	private void SetSoundTexture() {
