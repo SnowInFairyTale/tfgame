@@ -33,213 +33,119 @@ public class WaveManager extends DrawableGameComponent implements
         this.game = game;
         switch (difficulty) {
             case Easy:
-                this.waves.add(new Wave(game, 8, 20, 1f, 1500.0, 1,
-                        MonsterType.Peasant));
-                this.waves.add(new Wave(game, 8, 20, 1f, 1000.0, 1,
-                        MonsterType.Peasant));
-                this.waves.add(new Wave(game, 10, 30, 1.6f, 1000.0, 2,
-                        MonsterType.Peon));
-                this.waves.add(new Wave(game, 10, 30, 1f, 200.0, 2,
-                        MonsterType.Peasant));
-                this.waves.add(new Wave(game, 10, 30, 1f, 1000.0, 2,
-                        MonsterType.Chicken));
-                this.waves.add(new Wave(game, 10, 50, 1f, 1000.0, 2,
-                        MonsterType.Berserker));
-                this.waves.add(new Wave(game, 10, 70, 1f, 1000.0, 2,
-                        MonsterType.Chicken));
-                this.waves.add(new Wave(game, 10, 80, 1f, 200.0, 2,
-                        MonsterType.Berserker));
-                this.waves.add(new Wave(game, 1, 600, 1f, 1000.0, 0x19,
-                        MonsterType.Chieftain));
-                this.waves.add(new Wave(game, 10, 100, 1.6f, 300.0, 3,
-                        MonsterType.Peon));
-                this.waves.add(new Wave(game, 10, 130, 1f, 1000.0, 3,
-                        MonsterType.Berserker));
-                this.waves.add(new Wave(game, 13, 110, 1.2f, 800.0, 3,
-                        MonsterType.Chicken));
-                this.waves.add(new Wave(game, 2, 0x3e8, 1f, 1000.0, 0x19,
-                        MonsterType.Doctor));
-                this.waves.add(new Wave(game, 10, 150, 1f, 200.0, 3,
-                        MonsterType.Berserker));
-                this.waves.add(new Wave(game, 10, 100, 1.6f, 1000.0, 3,
-                        MonsterType.Peon));
+                this.waves.add(new Wave(game, 8, 20, 1f, 1500.0, 1, MonsterType.Peasant));
+                this.waves.add(new Wave(game, 8, 20, 1f, 1000.0, 1, MonsterType.Peasant));
+                this.waves.add(new Wave(game, 10, 30, 1.6f, 1000.0, 2, MonsterType.Peon));
+                this.waves.add(new Wave(game, 10, 30, 1f, 200.0, 2, MonsterType.Peasant));
+                this.waves.add(new Wave(game, 10, 30, 1f, 1000.0, 2, MonsterType.Chicken));
+                this.waves.add(new Wave(game, 10, 50, 1f, 1000.0, 2, MonsterType.Berserker));
+                this.waves.add(new Wave(game, 10, 70, 1f, 1000.0, 2, MonsterType.Chicken));
+                this.waves.add(new Wave(game, 10, 80, 1f, 200.0, 2, MonsterType.Berserker));
+                this.waves.add(new Wave(game, 1, 600, 1f, 1000.0, 0x19, MonsterType.Chieftain));
+                this.waves.add(new Wave(game, 10, 100, 1.6f, 300.0, 3, MonsterType.Peon));
+                this.waves.add(new Wave(game, 10, 130, 1f, 1000.0, 3, MonsterType.Berserker));
+                this.waves.add(new Wave(game, 13, 110, 1.2f, 800.0, 3, MonsterType.Chicken));
+                this.waves.add(new Wave(game, 2, 0x3e8, 1f, 1000.0, 0x19, MonsterType.Doctor));
+                this.waves.add(new Wave(game, 10, 150, 1f, 200.0, 3, MonsterType.Berserker));
+                this.waves.add(new Wave(game, 10, 100, 1.6f, 1000.0, 3, MonsterType.Peon));
                 game.Components().add(this);
                 this.timeUntilNextWave = -1.0;
                 break;
 
             case Medium:
-                this.waves.add(new Wave(game, 10, 40, 1f, 1500.0, 1,
-                        MonsterType.Peasant));
-                this.waves.add(new Wave(game, 10, 0x2d, 1.6f, 1000.0, 2,
-                        MonsterType.Peon));
-                this.waves.add(new Wave(game, 10, 50, 1f, 1000.0, 1,
-                        MonsterType.Chicken));
-                this.waves.add(new Wave(game, 5, 100, 1f, 400.0, 4,
-                        MonsterType.Berserker));
-                this.waves.add(new Wave(game, 10, 60, 1f, 1000.0, 2,
-                        MonsterType.Chicken));
-                this.waves.add(new Wave(game, 5, 0x4b, 1f, 200.0, 8,
-                        MonsterType.Doctor));
-                this.waves.add(new Wave(game, 10, 80, 1.6f, 1000.0, 2,
-                        MonsterType.Peon));
-                this.waves.add(new Wave(game, 10, 100, 1f, 1000.0, 2,
-                        MonsterType.Peasant));
-                this.waves.add(new Wave(game, 10, 120, 1f, 1000.0, 2,
-                        MonsterType.Chicken));
-                this.waves.add(new Wave(game, 10, 130, 1f, 200.0, 2,
-                        MonsterType.Berserker));
-                this.waves.add(new Wave(game, 10, 150, 1f, 1000.0, 2,
-                        MonsterType.Berserker));
-                this.waves.add(new Wave(game, 1, 0x7d0, 1f, 1000.0, 0x19,
-                        MonsterType.Chieftain));
-                this.waves.add(new Wave(game, 10, 0xaf, 1.6f, 300.0, 3,
-                        MonsterType.Peon));
-                this.waves.add(new Wave(game, 10, 200, 1f, 1000.0, 3,
-                        MonsterType.Berserker));
-                this.waves.add(new Wave(game, 13, 200, 1.2f, 800.0, 3,
-                        MonsterType.Chicken));
-                this.waves.add(new Wave(game, 3, 0x3e8, 1f, 1000.0, 20,
-                        MonsterType.Doctor));
-                this.waves.add(new Wave(game, 10, 200, 1f, 200.0, 3,
-                        MonsterType.Berserker));
-                this.waves.add(new Wave(game, 10, 220, 1.6f, 1000.0, 3,
-                        MonsterType.Peon));
-                this.waves.add(new Wave(game, 1, 0xbb8, 1f, 1000.0, 30,
-                        MonsterType.Chieftain));
-                this.waves.add(new Wave(game, 10, 250, 1f, 1000.0, 4,
-                        MonsterType.Peasant));
-                this.waves.add(new Wave(game, 5, 800, 1f, 3000.0, 20,
-                        MonsterType.Doctor));
-                this.waves.add(new Wave(game, 10, 300, 1f, 1000.0, 4,
-                        MonsterType.Chicken));
-                this.waves.add(new Wave(game, 10, 300, 1f, 1000.0, 4,
-                        MonsterType.Peasant));
-                this.waves.add(new Wave(game, 10, 350, 1f, 1000.0, 4,
-                        MonsterType.Berserker));
-                this.waves.add(new Wave(game, 1, 0xdac, 1f, 1000.0, 4,
-                        MonsterType.Chieftain));
-                this.waves.add(new Wave(game, 10, 400, 1f, 200.0, 5,
-                        MonsterType.Peon));
-                this.waves.add(new Wave(game, 10, 450, 1f, 1000.0, 5,
-                        MonsterType.Peasant));
-                this.waves.add(new Wave(game, 10, 500, 1f, 500.0, 5,
-                        MonsterType.Chicken));
-                this.waves.add(new Wave(game, 1, 0x157c, 1f, 1000.0, 40,
-                        MonsterType.Chieftain));
-                this.waves.add(new Wave(game, 4, 0x4b0, 1f, 1000.0, 40,
-                        MonsterType.Doctor));
+                this.waves.add(new Wave(game, 10, 40, 1f, 1500.0, 1, MonsterType.Peasant));
+                this.waves.add(new Wave(game, 10, 0x2d, 1.6f, 1000.0, 2, MonsterType.Peon));
+                this.waves.add(new Wave(game, 10, 50, 1f, 1000.0, 1, MonsterType.Chicken));
+                this.waves.add(new Wave(game, 5, 100, 1f, 400.0, 4, MonsterType.Berserker));
+                this.waves.add(new Wave(game, 10, 60, 1f, 1000.0, 2, MonsterType.Chicken));
+                this.waves.add(new Wave(game, 5, 0x4b, 1f, 200.0, 8, MonsterType.Doctor));
+                this.waves.add(new Wave(game, 10, 80, 1.6f, 1000.0, 2, MonsterType.Peon));
+                this.waves.add(new Wave(game, 10, 100, 1f, 1000.0, 2, MonsterType.Peasant));
+                this.waves.add(new Wave(game, 10, 120, 1f, 1000.0, 2, MonsterType.Chicken));
+                this.waves.add(new Wave(game, 10, 130, 1f, 200.0, 2, MonsterType.Berserker));
+                this.waves.add(new Wave(game, 10, 150, 1f, 1000.0, 2, MonsterType.Berserker));
+                this.waves.add(new Wave(game, 1, 0x7d0, 1f, 1000.0, 0x19, MonsterType.Chieftain));
+                this.waves.add(new Wave(game, 10, 0xaf, 1.6f, 300.0, 3, MonsterType.Peon));
+                this.waves.add(new Wave(game, 10, 200, 1f, 1000.0, 3, MonsterType.Berserker));
+                this.waves.add(new Wave(game, 13, 200, 1.2f, 800.0, 3, MonsterType.Chicken));
+                this.waves.add(new Wave(game, 3, 0x3e8, 1f, 1000.0, 20, MonsterType.Doctor));
+                this.waves.add(new Wave(game, 10, 200, 1f, 200.0, 3, MonsterType.Berserker));
+                this.waves.add(new Wave(game, 10, 220, 1.6f, 1000.0, 3, MonsterType.Peon));
+                this.waves.add(new Wave(game, 1, 0xbb8, 1f, 1000.0, 30, MonsterType.Chieftain));
+                this.waves.add(new Wave(game, 10, 250, 1f, 1000.0, 4, MonsterType.Peasant));
+                this.waves.add(new Wave(game, 5, 800, 1f, 3000.0, 20, MonsterType.Doctor));
+                this.waves.add(new Wave(game, 10, 300, 1f, 1000.0, 4, MonsterType.Chicken));
+                this.waves.add(new Wave(game, 10, 300, 1f, 1000.0, 4, MonsterType.Peasant));
+                this.waves.add(new Wave(game, 10, 350, 1f, 1000.0, 4, MonsterType.Berserker));
+                this.waves.add(new Wave(game, 1, 0xdac, 1f, 1000.0, 4, MonsterType.Chieftain));
+                this.waves.add(new Wave(game, 10, 400, 1f, 200.0, 5, MonsterType.Peon));
+                this.waves.add(new Wave(game, 10, 450, 1f, 1000.0, 5, MonsterType.Peasant));
+                this.waves.add(new Wave(game, 10, 500, 1f, 500.0, 5, MonsterType.Chicken));
+                this.waves.add(new Wave(game, 1, 0x157c, 1f, 1000.0, 40, MonsterType.Chieftain));
+                this.waves.add(new Wave(game, 4, 0x4b0, 1f, 1000.0, 40, MonsterType.Doctor));
                 game.Components().add(this);
                 this.timeUntilNextWave = -1.0;
                 break;
             case Hard:
-                this.waves.add(new Wave(game, 12, 60, 1f, 1000.0, 1,
-                        MonsterType.Peasant));
-                this.waves.add(new Wave(game, 12, 0x41, 1.8f, 1000.0, 1,
-                        MonsterType.Peon));
-                this.waves.add(new Wave(game, 10, 60, 1f, 1000.0, 1,
-                        MonsterType.Chicken));
-                this.waves.add(new Wave(game, 12, 80, 1f, 1000.0, 1,
-                        MonsterType.Peasant));
-                this.waves.add(new Wave(game, 12, 130, 1f, 1000.0, 1,
-                        MonsterType.Berserker));
-                this.waves.add(new Wave(game, 6, 100, 1f, 2000.0, 2,
-                        MonsterType.Doctor));
-                this.waves.add(new Wave(game, 12, 120, 1f, 1000.0, 1,
-                        MonsterType.Peasant));
-                this.waves.add(new Wave(game, 10, 90, 1f, 1000.0, 1,
-                        MonsterType.Chicken));
-                this.waves.add(new Wave(game, 12, 150, 1f, 1000.0, 2,
-                        MonsterType.Peasant));
-                this.waves.add(new Wave(game, 12, 150, 1.8f, 1000.0, 2,
-                        MonsterType.Peon));
-                this.waves.add(new Wave(game, 10, 190, 1f, 300.0, 2,
-                        MonsterType.Berserker));
-                this.waves.add(new Wave(game, 8, 100, 1f, 1000.0, 2,
-                        MonsterType.Chicken));
-                this.waves.add(new Wave(game, 10, 110, 1f, 200.0, 2,
-                        MonsterType.Chicken));
+                this.waves.add(new Wave(game, 12, 60, 1f, 1000.0, 1, MonsterType.Peasant));
+                this.waves.add(new Wave(game, 12, 0x41, 1.8f, 1000.0, 1, MonsterType.Peon));
+                this.waves.add(new Wave(game, 10, 60, 1f, 1000.0, 1, MonsterType.Chicken));
+                this.waves.add(new Wave(game, 12, 80, 1f, 1000.0, 1, MonsterType.Peasant));
+                this.waves.add(new Wave(game, 12, 130, 1f, 1000.0, 1, MonsterType.Berserker));
+                this.waves.add(new Wave(game, 6, 100, 1f, 2000.0, 2, MonsterType.Doctor));
+                this.waves.add(new Wave(game, 12, 120, 1f, 1000.0, 1, MonsterType.Peasant));
+                this.waves.add(new Wave(game, 10, 90, 1f, 1000.0, 1, MonsterType.Chicken));
+                this.waves.add(new Wave(game, 12, 150, 1f, 1000.0, 2, MonsterType.Peasant));
+                this.waves.add(new Wave(game, 12, 150, 1.8f, 1000.0, 2, MonsterType.Peon));
+                this.waves.add(new Wave(game, 10, 190, 1f, 300.0, 2, MonsterType.Berserker));
+                this.waves.add(new Wave(game, 8, 100, 1f, 1000.0, 2, MonsterType.Chicken));
+                this.waves.add(new Wave(game, 10, 110, 1f, 200.0, 2, MonsterType.Chicken));
                 if (game.getGameplayScreen().getLevel() != 2) {
-                    this.waves.add(new Wave(game, 12, 240, 1.8f, 1000.0, 2,
-                            MonsterType.Peon));
-                    this.waves.add(new Wave(game, 1, 0x4b0, 1f, 1000.0, 0x19,
-                            MonsterType.Chieftain));
+                    this.waves.add(new Wave(game, 12, 240, 1.8f, 1000.0, 2, MonsterType.Peon));
+                    this.waves.add(new Wave(game, 1, 0x4b0, 1f, 1000.0, 0x19, MonsterType.Chieftain));
                     break;
                 }
-                this.waves.add(new Wave(game, 12, 200, 1.8f, 1000.0, 2,
-                        MonsterType.Peon));
-                this.waves.add(new Wave(game, 1, 0x3e8, 1f, 1000.0, 0x19,
-                        MonsterType.Chieftain));
+                this.waves.add(new Wave(game, 12, 200, 1.8f, 1000.0, 2, MonsterType.Peon));
+                this.waves.add(new Wave(game, 1, 0x3e8, 1f, 1000.0, 0x19, MonsterType.Chieftain));
                 break;
 
             default:
                 throw new RuntimeException("Unknown difficulty in wavemanager!");
         }
-        this.waves.add(new Wave(game, 0x12, 200, 1f, 1000.0, 2,
-                MonsterType.Peasant));
-        this.waves.add(new Wave(game, 12, 260, 1.8f, 600.0, 2,
-                MonsterType.Peasant));
-        this.waves
-                .add(new Wave(game, 3, 500, 1f, 2000.0, 4, MonsterType.Doctor));
-        this.waves.add(new Wave(game, 8, 0x9b, 1f, 1000.0, 3,
-                MonsterType.Chicken));
-        this.waves.add(new Wave(game, 12, 220, 1f, 300.0, 2,
-                MonsterType.Peasant));
-        this.waves.add(new Wave(game, 12, 260, 1f, 1000.0, 3,
-                MonsterType.Berserker));
-        this.waves
-                .add(new Wave(game, 10, 280, 2f, 1000.0, 3, MonsterType.Peon));
-        this.waves.add(new Wave(game, 10, 170, 1f, 600.0, 3,
-                MonsterType.Chicken));
-        this.waves
-                .add(new Wave(game, 10, 360, 1.8f, 200.0, 3, MonsterType.Peon));
-        this.waves.add(new Wave(game, 10, 500, 1f, 1000.0, 3,
-                MonsterType.Berserker));
-        this.waves.add(new Wave(game, 1, 0xdac, 1f, 1000.0, 30,
-                MonsterType.Chieftain));
-        this.waves.add(new Wave(game, 10, 310, 1f, 1000.0, 3,
-                MonsterType.Chicken));
-        this.waves.add(new Wave(game, 10, 500, 1f, 1000.0, 3,
-                MonsterType.Peasant));
-        this.waves
-                .add(new Wave(game, 5, 900, 1f, 2000.0, 6, MonsterType.Doctor));
-        this.waves.add(new Wave(game, 20, 550, 1f, 1000.0, 2,
-                MonsterType.Berserker));
-        this.waves.add(new Wave(game, 10, 500, 1f, 1000.0, 3,
-                MonsterType.Chicken));
-        this.waves
-                .add(new Wave(game, 10, 700, 1.8f, 400.0, 3, MonsterType.Peon));
-        this.waves.add(new Wave(game, 12, 800, 1f, 5000.0, 3,
-                MonsterType.Peasant));
+        this.waves.add(new Wave(game, 0x12, 200, 1f, 1000.0, 2, MonsterType.Peasant));
+        this.waves.add(new Wave(game, 12, 260, 1.8f, 600.0, 2, MonsterType.Peasant));
+        this.waves.add(new Wave(game, 3, 500, 1f, 2000.0, 4, MonsterType.Doctor));
+        this.waves.add(new Wave(game, 8, 0x9b, 1f, 1000.0, 3, MonsterType.Chicken));
+        this.waves.add(new Wave(game, 12, 220, 1f, 300.0, 2, MonsterType.Peasant));
+        this.waves.add(new Wave(game, 12, 260, 1f, 1000.0, 3, MonsterType.Berserker));
+        this.waves.add(new Wave(game, 10, 280, 2f, 1000.0, 3, MonsterType.Peon));
+        this.waves.add(new Wave(game, 10, 170, 1f, 600.0, 3, MonsterType.Chicken));
+        this.waves.add(new Wave(game, 10, 360, 1.8f, 200.0, 3, MonsterType.Peon));
+        this.waves.add(new Wave(game, 10, 500, 1f, 1000.0, 3, MonsterType.Berserker));
+        this.waves.add(new Wave(game, 1, 0xdac, 1f, 1000.0, 30, MonsterType.Chieftain));
+        this.waves.add(new Wave(game, 10, 310, 1f, 1000.0, 3, MonsterType.Chicken));
+        this.waves.add(new Wave(game, 10, 500, 1f, 1000.0, 3, MonsterType.Peasant));
+        this.waves.add(new Wave(game, 5, 900, 1f, 2000.0, 6, MonsterType.Doctor));
+        this.waves.add(new Wave(game, 20, 550, 1f, 1000.0, 2, MonsterType.Berserker));
+        this.waves.add(new Wave(game, 10, 500, 1f, 1000.0, 3, MonsterType.Chicken));
+        this.waves.add(new Wave(game, 10, 700, 1.8f, 400.0, 3, MonsterType.Peon));
+        this.waves.add(new Wave(game, 12, 800, 1f, 5000.0, 3, MonsterType.Peasant));
         if (game.getGameplayScreen().getLevel() == 2) {
-            this.waves.add(new Wave(game, 10, 700, 1f, 1000.0, 3,
-                    MonsterType.Berserker));
-            this.waves.add(new Wave(game, 2, 0xc80, 1f, 1000.0, 30,
-                    MonsterType.Chieftain));
-            this.waves.add(new Wave(game, 10, 420, 1f, 1000.0, 3,
-                    MonsterType.Chicken));
-            this.waves.add(new Wave(game, 10, 800, 1f, 1000.0, 3,
-                    MonsterType.Peasant));
-            this.waves.add(new Wave(game, 10, 950, 2f, 1000.0, 3,
-                    MonsterType.Peon));
-            this.waves.add(new Wave(game, 10, 0x44c, 1f, 500.0, 3,
-                    MonsterType.Berserker));
-            this.waves.add(new Wave(game, 5, 0xce4, 1f, 4000.0, 30,
-                    MonsterType.Chieftain));
+            this.waves.add(new Wave(game, 10, 700, 1f, 1000.0, 3, MonsterType.Berserker));
+            this.waves.add(new Wave(game, 2, 0xc80, 1f, 1000.0, 30, MonsterType.Chieftain));
+            this.waves.add(new Wave(game, 10, 420, 1f, 1000.0, 3, MonsterType.Chicken));
+            this.waves.add(new Wave(game, 10, 800, 1f, 1000.0, 3, MonsterType.Peasant));
+            this.waves.add(new Wave(game, 10, 950, 2f, 1000.0, 3, MonsterType.Peon));
+            this.waves.add(new Wave(game, 10, 0x44c, 1f, 500.0, 3, MonsterType.Berserker));
+            this.waves.add(new Wave(game, 5, 0xce4, 1f, 4000.0, 30, MonsterType.Chieftain));
         } else {
-            this.waves.add(new Wave(game, 10, 900, 1f, 1000.0, 3,
-                    MonsterType.Berserker));
-            this.waves.add(new Wave(game, 2, 0xfa0, 1f, 1000.0, 30,
-                    MonsterType.Chieftain));
-            this.waves.add(new Wave(game, 10, 450, 1f, 1000.0, 3,
-                    MonsterType.Chicken));
-            this.waves.add(new Wave(game, 10, 0x3e8, 1f, 1000.0, 3,
-                    MonsterType.Peasant));
-            this.waves.add(new Wave(game, 10, 0x41a, 2f, 1000.0, 3,
-                    MonsterType.Peon));
-            this.waves.add(new Wave(game, 10, 0x4b0, 1f, 500.0, 3,
-                    MonsterType.Berserker));
-            this.waves.add(new Wave(game, 5, 0xfa0, 1f, 4000.0, 30,
-                    MonsterType.Chieftain));
+            this.waves.add(new Wave(game, 10, 900, 1f, 1000.0, 3, MonsterType.Berserker));
+            this.waves.add(new Wave(game, 2, 0xfa0, 1f, 1000.0, 30, MonsterType.Chieftain));
+            this.waves.add(new Wave(game, 10, 450, 1f, 1000.0, 3, MonsterType.Chicken));
+            this.waves.add(new Wave(game, 10, 0x3e8, 1f, 1000.0, 3, MonsterType.Peasant));
+            this.waves.add(new Wave(game, 10, 0x41a, 2f, 1000.0, 3, MonsterType.Peon));
+            this.waves.add(new Wave(game, 10, 0x4b0, 1f, 500.0, 3, MonsterType.Berserker));
+            this.waves.add(new Wave(game, 5, 0xfa0, 1f, 4000.0, 30, MonsterType.Chieftain));
         }
 
     }
