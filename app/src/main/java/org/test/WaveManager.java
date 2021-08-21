@@ -667,7 +667,7 @@ public class WaveManager extends DrawableGameComponent implements
                     if (this.nextWaveMonsterType != null) {
                         this.game.Components().remove(this.nextWaveMonsterType);
                     }
-                    this.timeUntilNextWave = 20000.0;
+                    this.timeUntilNextWave = 5000.0;
                     if ((this.waveNumber + 1) < this.waves.size()) {
                         this.nextWaveMonsterType = AnimatedSpriteMonster
                                 .GetSmallAnimatedSpriteMonster(this.game,
