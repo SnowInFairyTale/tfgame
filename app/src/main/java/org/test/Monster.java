@@ -6,6 +6,9 @@ import loon.utils.MathUtils;
 
 public abstract class Monster extends AnimatedSprite {
 
+    private static final float MAX_HU_JIA = 50.0f;
+    private static final int MAX_GE_DANG = 50;
+
     private Vector2f destinationPosition;
     private Vector2f direction;
     private MainGame game;
@@ -65,9 +68,20 @@ public abstract class Monster extends AnimatedSprite {
                 super.getSpriteHeight());
     }
 
+    public float getHJDamage() {
+        float sort = Math.min(1.0f, Math.max(0.0f, this.getHuJia() * 1.0f / MAX_HU_JIA));
+        return sort + 1.0f;
+    }
+
+    public int getXGeDang() {
+        return Math.min(Math.max(0, this.getGeDang()), MAX_GE_DANG);
+    }
+
     public final void Hit(int damage) {
         if (!this.getDead()) {
-            this.setHitPoints(this.getHitPoints() - damage);
+            int xDamage = Math.max(0, damage - getXGeDang());
+            xDamage = (int) (xDamage * 1.0f / getHJDamage());
+            this.setHitPoints(this.getHitPoints() - xDamage);
             this.getHealthBar().setCurrentPercent(
                     (100 * this.getHitPoints()) / this.getStartHitPoints());
             if (this.getHitPoints() <= 0) {
