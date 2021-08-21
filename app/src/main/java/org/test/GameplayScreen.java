@@ -62,7 +62,7 @@ public class GameplayScreen extends GameScreen {
 		for (TowerButton button : this.towerButtons) {
 			game.Components().add(button);
 		}
-		this.setRemainingLives(new RemainingLives(game, 20));
+		this.setRemainingLives(new RemainingLives(game, 50));
 		game.Components().add(this.getRemainingLives());
 		this.setCash(new Cash(game, 50));
 		this.setGameOpacity(LColor.white);

@@ -14,7 +14,7 @@ public abstract class Monster extends AnimatedSprite {
 	private Wave wave;
 
 	public Monster(MainGame game, Wave wave, int startHitPoints, float speed,
-			int value, String textureFile, int columnCount, int spriteCount,
+			int value,  int huJia, int geDang, String textureFile, int columnCount, int spriteCount,
 			int spriteHeight, int spriteWidth) {
 		super(game, textureFile, new Vector2f(1f, 200f), columnCount,
 				spriteCount, spriteWidth, spriteHeight, 1f);
@@ -23,11 +23,11 @@ public abstract class Monster extends AnimatedSprite {
 
 		this.setGridPosition(new Vector2f(startPoint.x, MathUtils
 				.nextInt(-1, 2) + startPoint.y));
-		this.Init(game, wave, value, startHitPoints, speed);
+		this.Init(game, wave, value, startHitPoints, speed, huJia, geDang);
 	}
 
 	public Monster(MainGame game, Wave wave, int startHitPoints, float speed,
-			int value, String textureFile, int columnCount, int spriteCount,
+			int value,  int huJia, int geDang, String textureFile, int columnCount, int spriteCount,
 			int spriteHeight, int spriteWidth, Vector2f gridPosition) {
 		super(game, textureFile, new Vector2f(1f, 200f), columnCount,
 				spriteCount, spriteWidth, spriteHeight, 1f);
@@ -40,7 +40,7 @@ public abstract class Monster extends AnimatedSprite {
 			throw new RuntimeException("gridPosition is not valid.");
 		}
 		this.setGridPosition(gridPosition);
-		this.Init(game, wave, value, startHitPoints, speed);
+		this.Init(game, wave, value, startHitPoints, speed, huJia, geDang);
 	}
 
 	private java.util.ArrayList<Vector2f> GetMonsterSpawnOffsetPositions() {
@@ -128,10 +128,12 @@ public abstract class Monster extends AnimatedSprite {
 	}
 
 	private void Init(MainGame game, Wave wave, int value, int startHitPoints,
-			float speed) {
+			float speed, int huJia, int geDang) {
 		this.setStartHitPoints(startHitPoints);
 		this.setHitPoints(startHitPoints);
 		this.setSpeed(speed);
+		this.setHuJia(huJia);
+		this.setGeDang(geDang);
 		this.setHealthBar(new ProgressBar(game, 20, true));
 		this.getHealthBar().setDrawOrder(1);
 		this.getHealthBar().setDrawBorder(true);
@@ -343,5 +345,24 @@ public abstract class Monster extends AnimatedSprite {
 
 	public final void setValue(int value) {
 		privateValue = value;
+	}
+
+	private int huJia;
+	private int geDang;
+
+	public int getHuJia() {
+		return huJia;
+	}
+
+	public void setHuJia(int huJia) {
+		this.huJia = huJia;
+	}
+
+	public int getGeDang() {
+		return geDang;
+	}
+
+	public void setGeDang(int geDang) {
+		this.geDang = geDang;
 	}
 }

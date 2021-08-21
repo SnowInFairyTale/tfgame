@@ -16,8 +16,11 @@ public class Wave extends DrawableGameComponent implements IGameComponent {
 	private double timeUntilNextMonsterAdd;
 	private int value;
 
+	private int huJia;
+	private int geDang;
+
 	public Wave(MainGame game, int num_monsters, int startHitPoints,
-			float speed, double spread, int value, MonsterType monsterType) {
+			float speed, double spread, int value, int huJia, int geDang, MonsterType monsterType) {
 		super(game);
 		this.game = game;
 		this.privateMonsters = new java.util.ArrayList<Monster>(10);
@@ -26,6 +29,8 @@ public class Wave extends DrawableGameComponent implements IGameComponent {
 		this.speed = speed;
 		this.spread = spread;
 		this.value = value;
+		this.huJia = huJia;
+		this.geDang = geDang;
 		this.setMonsterType(monsterType);
 		this.setWaveState(WaveState.NotStarted);
 		this.timeUntilNextMonsterAdd = 0.0;
